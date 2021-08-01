@@ -8,11 +8,13 @@
 - Open a terminal inside the folder birthday:
 - To install the requirements to system, run:
 ```
+virtualenv venv
+```
+```
+source venv/activate/bin
+```
+```
 pip3 install -r requirements.txt
-```
-- Alternatively, you can use the virtual environment provided:
-```
-source venv/bin/activate
 ```
 - Finally run the project:
 ```

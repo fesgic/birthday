@@ -49,8 +49,8 @@ def processing(photos):
     global result
     for i in photos:
         result = Image.open(i)
-        b = result.resize((370, 590), Image.ANTIALIAS)
-        answer = ImageTk.PhotoImage(b)
+        result.thumbnail((1366,590), Image.LANCZOS)
+        answer = ImageTk.PhotoImage(result)
         images.append(answer)
 
 processing(photos)
